@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jouer | L'odyssée de l'enseignement</title>
+    <meta
+      name="description"
+      content="Lecture interactive du livre-jeu L'odyssée de l'enseignement : narration, décisions, progression et artefacts débloqués."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/favicons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/media/favicons/favicon-64.png" />
+    <link rel="apple-touch-icon" href="assets/media/favicons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="game-page">
+    <header class="game-topbar">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+        <div>
+          <p class="card-kicker mb-1">Mode immersion</p>
+          <h1 class="game-page-title mb-0">Entrer dans le livre</h1>
+        </div>
+        <div class="download-strip">
+          <a class="btn btn-outline-shell" href="index.html">Retour au site pédagogique</a>
+          <a class="btn btn-outline-shell" href="docs/odyssee-enseignement.epub">EPUB original</a>
+          <a class="btn btn-outline-shell" href="docs/odyssee-enseignement.pdf">Version PDF</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section-shell pt-4">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-xl-4">
+            <div class="game-sidebar d-grid gap-4">
+              <article class="surface-card">
+                <div class="card-body">
+                  <p class="card-kicker">Lecture en cours</p>
+                  <h2 class="card-title">Une interface pensée pour jouer</h2>
+                  <p>
+                    Ici, pas de carte globale affichée à l'avance. L'odyssée se découvre par la narration, les choix
+                    et les traces que tu laisses dans ton journal d'aventure.
+                  </p>
+                  <div class="d-grid gap-2 mt-4">
+                    <button id="restartStory" class="btn btn-accent" type="button">Recommencer depuis le début</button>
+                    <button id="backStory" class="btn btn-outline-shell" type="button">Revenir d'un choix</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="surface-card">
+                <div class="card-body">
+                  <p class="card-kicker">Progression</p>
+                  <h3 class="card-title">Journal de route</h3>
+                  <div class="progress-track" aria-hidden="true">
+                    <div id="storyProgressBar" class="progress-bar-fill"></div>
+                  </div>
+                  <div id="storyMetrics" class="metrics-stack mt-3"></div>
+                  <div class="mt-3">
+                    <h4 class="mini-title">Route active</h4>
+                    <div id="storyPath" class="path-pills"></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="surface-card">
+                <div class="card-body">
+                  <p class="card-kicker">Décisions prises</p>
+                  <h3 class="card-title">Historique de partie</h3>
+                  <div id="decisionLog" class="decision-log"></div>
+                </div>
+              </article>
+
+              <article class="surface-card">
+                <div class="card-body">
+                  <p class="card-kicker">Artefacts débloqués</p>
+                  <h3 class="card-title">Inventaire narratif</h3>
+                  <div id="artifactGrid" class="artifact-grid"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-xl-8">
+            <article class="surface-card story-shell game-story-shell" aria-live="polite">
+              <div class="card-body p-lg-4 p-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+                  <div>
+                    <span id="storyBadge" class="story-badge">Chapitre 1</span>
+                    <h2 id="storyTitle" class="story-title mt-3 mb-2"></h2>
+                    <p id="storyTheme" class="story-theme mb-0"></p>
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-outline-shell btn-sm" href="index.html">Retour aux ressources</a>
+                    <a class="btn btn-outline-shell btn-sm" href="docs/odyssee-enseignement.epub">Ouvrir l'EPUB</a>
+                  </div>
+                </div>
+
+                <div id="storyArtworkGallery" class="story-media-wrapper story-media-grid mb-4">
+                  <figure class="story-media-card">
+                    <img
+                      class="story-cover"
+                      src="assets/media/chapters-web/chapter-1-1.jpg"
+                      alt="Illustration du chapitre Objectifs pédagogiques"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+
+                <div id="storyTags" class="story-tags mb-4"></div>
+                <div id="storyBody" class="story-body"></div>
+
+                <div class="story-choices-block mt-4">
+                  <h3 class="mini-title">Choisir la suite</h3>
+                  <div id="storyChoices" class="story-choices"></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-grid gap-3">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
+          <p class="mb-0">
+            Version de jeu autonome conçue pour préserver l'immersion tout en gardant une trace des choix et des acquis.
+          </p>
+          <p class="mb-0">Version <span id="currentVersion"></span></p>
+        </div>
+        <div class="footer-compact-note">
+          <p class="mb-0">
+            Crédits, inspiration et licence ouverte disponibles sur
+            <a href="index.html#credits">la page d'accueil</a>.
+            Les contenus originaux du site restent diffusés sous
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/version.js"></script>
+    <script src="assets/js/game-data.js"></script>
+    <script src="assets/js/game.js"></script>
+  </body>
+</html>

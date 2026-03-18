@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L'odyssée de l'enseignement | Livre-jeu pédagogique</title>
+    <meta
+      name="description"
+      content="Découvrir le concept de livre-jeu pédagogique, ses repères théoriques, son kit pédagogique et son adaptation web interactive."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/favicons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/media/favicons/favicon-64.png" />
+    <link rel="apple-touch-icon" href="assets/media/favicons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#site-nav" data-bs-offset="96">
+    <nav id="site-nav" class="navbar navbar-expand-lg fixed-top navbar-glass">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#top">
+          <img
+            class="brand-mark"
+            src="assets/media/cover-odyssee-mark.png"
+            alt=""
+          />
+          <span>
+            <span class="brand-title d-block">L'odyssée de l'enseignement</span>
+            <span class="brand-subtitle d-block">Livre-jeu pédagogique pour l'enseignement supérieur</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Ouvrir la navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-3 mb-lg-0 align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pedagogie">Volet pédagogique</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ingenierie">Kit pédagogique</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ressources">Ressources</a></li>
+          </ul>
+          <a class="btn btn-accent ms-lg-3" href="game.html">Jouer</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Livre-jeu | Ressource pédagogique</span>
+            <h1 class="hero-title">
+              Livre-jeu
+              <span>L'odyssée de l'enseignement</span>
+            </h1>
+            <p class="hero-copy">
+              Ce site propose de découvrir le concept de livre dont vous êtes le héros pédagogique (LDVELH), à
+              travers un livre-jeu interactif et des repères pour comprendre ses mécaniques, ses théories et ses
+              usages.
+            </p>
+            <p class="hero-copy mt-3 mb-0">
+              Note d’intention : cette proposition n’est pas un dispositif de formation exhaustif. Elle constitue un
+              support de sensibilisation pour explorer les concepts, les choix de conception et les fondements
+              pédagogiques du livre-jeu.
+            </p>
+            <div class="metric-ribbon mt-4">
+              <span class="metric-pill">Immersion narrative</span>
+              <span class="metric-pill">Récit à embranchements</span>
+              <span class="metric-pill">Individualisation des parcours</span>
+              <span class="metric-pill">Essai-erreur et remédiation</span>
+              <span class="metric-pill">Autonomie et coopération</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="cover-frame">
+                <img
+                  src="assets/media/cover-odyssee-hero.jpg"
+                  alt="Couverture de L'odyssée de l'enseignement"
+                  class="hero-cover"
+                  decoding="async"
+                />
+              </div>
+              <div class="floating-card hero-quote">
+                <p class="card-kicker">Promesse pédagogique</p>
+                <p class="mb-0">
+                  Individualiser les parcours, nourrir l'engagement, favoriser l'autonomie et transformer la
+                  conception pédagogique en aventure.
+                </p>
+              </div>
+              <div class="floating-card guide-snapshot">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="assets/media/vigie-guide-web.jpg" alt="La Vigie" class="avatar-thumb" decoding="async" />
+                  <div>
+                    <p class="card-kicker mb-1">Guide 01</p>
+                    <h2 class="mini-title mb-1">La Vigie</h2>
+                    <p class="mb-0">Feedback constructif, anticipation, mise en perspective.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card architect-snapshot">
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="assets/media/architecte-constructeur-web.jpg"
+                    alt="L'Architecte"
+                    class="avatar-thumb"
+                    decoding="async"
+                  />
+                  <div>
+                    <p class="card-kicker mb-1">Guide 02</p>
+                    <h2 class="mini-title mb-1">L'Architecte</h2>
+                    <p class="mb-0">Structuration, mise en intrigue et passage à la création.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="vision" class="section-shell">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <span class="eyebrow">Positionnement</span>
+              <h2 class="section-title">Un pont entre pédagogie et plaisir de lecture</h2>
+              <p class="section-copy">
+                Les ressources réunies ici répondent à un besoin clair : aider les enseignant·es à composer avec la
+                diversité des rythmes, des intérêts et des niveaux de compréhension sans perdre l'engagement du
+                groupe. Le choix du livre-jeu devient alors un véritable outil de design pédagogique.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="surface-card insight-card h-100">
+                    <div class="card-body">
+                      <p class="card-kicker">Pour qui</p>
+                      <h3 class="card-title">Enseignement supérieur</h3>
+                      <p>
+                        Formation des enseignant·es, ateliers d'ingénierie pédagogique, accompagnement de dispositifs
+                        actifs, autoformation et animation de demi-journées thématiques.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="surface-card insight-card h-100">
+                    <div class="card-body">
+                      <p class="card-kicker">Ce que le site apporte</p>
+                      <h3 class="card-title">Trois usages</h3>
+                      <p>
+                        Comprendre les théories, préparer un atelier de conception et vivre le livre-jeu dans une
+                        interface web plus accessible, plus lisible et plus engageante.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="surface-card insight-card h-100">
+                    <div class="card-body">
+                      <p class="card-kicker">Ce que le jeu travaille</p>
+                      <h3 class="card-title">Cinq leviers</h3>
+                      <p>
+                        Individualisation, autonomie, coopération, pratique-feedback-remédiation et apprentissage par
+                        la découverte.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pedagogie" class="section-shell section-soft">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-5">
+            <div class="col-lg-6">
+              <span class="eyebrow">Volet pédagogique</span>
+              <h2 class="section-title">Le cadre conceptuel qui soutient le livre-jeu</h2>
+              <p class="section-copy">
+                Les documents convergent vers une même idée : l'immersion narrative n'est intéressante que si elle
+                reste strictement alignée sur des intentions d'apprentissage explicites. Ici, le ludique ne masque pas
+                la pédagogie ; il la rend visible, sensible et activable.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <figure class="surface-card figure-card mb-0">
+                <img
+                  src="assets/media/kit-pedagogique-web.jpg"
+                  alt="Illustration du kit pédagogique"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  Le jeu est pensé comme un icebreaker pédagogique et comme un support de discussion collective.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Besoin identifié</p>
+                  <h3 class="card-title">Composer avec l'hétérogénéité</h3>
+                  <p>
+                    Les documents insistent sur la diversité des profils d'apprentissage, des rythmes, des intérêts et
+                    des niveaux de compréhension au sein d'un même groupe. Le livre-jeu devient une réponse à cette
+                    hétérogénéité.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Problématique</p>
+                  <h3 class="card-title">Individualiser sans désengager</h3>
+                  <p>
+                    L'enjeu n'est pas seulement de varier les contenus mais d'offrir une stratégie qui renforce la
+                    motivation, l'autonomie et la participation active des apprenant·es dans une même activité.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Objectifs annoncés</p>
+                  <h3 class="card-title">Trois acquis cibles</h3>
+                  <ul class="clean-list">
+                    <li>Découvrir et analyser les mécaniques propres aux livres dont vous êtes le héros.</li>
+                    <li>Identifier comment elles soutiennent individualisation, autonomie et coopération.</li>
+                    <li>Évaluer les potentialités et les limites d'un tel support dans un dispositif d'enseignement.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-md-6 col-xl-3">
+              <article class="surface-card theory-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Théorie 01</p>
+                  <h3 class="card-title">Béhaviorisme</h3>
+                  <p>
+                    Renforcement positif, conséquence immédiate des choix, progression par essai-erreur et feedback
+                    intégré à l'histoire.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="surface-card theory-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Théorie 02</p>
+                  <h3 class="card-title">Socio-constructivisme</h3>
+                  <p>
+                    Construction collective du savoir, débats autour des choix, interprétation partagée et coopération
+                    comme moteur d'apprentissage.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="surface-card theory-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Méthode 03</p>
+                  <h3 class="card-title">Pédagogies actives</h3>
+                  <p>
+                    L'apprenant agit, choisit, teste, se trompe et construit son parcours à travers une narration qui
+                    lui donne une prise réelle sur la progression.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <article class="surface-card theory-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Méthode 04</p>
+                  <h3 class="card-title">Apprentissage expérientiel</h3>
+                  <p>
+                    Le jeu fournit un espace pour vivre une situation, observer ses effets, conceptualiser et retenter
+                    autrement.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-xl-5">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Articulation ludique / pédagogique</p>
+                  <h3 class="card-title">Gamifier, oui. Détourner l'apprentissage, non.</h3>
+                  <p>
+                    Les objectifs ludiques cherchent le plaisir, le défi et l'exploration. Les objectifs pédagogiques
+                    formulent les acquis attendus. Les documents insistent sur leur alignement permanent et introduisent
+                    la notion de dégamification : retirer ce qui brouille ou affaiblit la visée éducative.
+                  </p>
+                  <div class="callout-note mt-4">
+                    <h4 class="mini-title">La règle de non-retour comme cas d'école</h4>
+                    <p class="mb-2">
+                      Gamifier la non-réversibilité augmente tension, responsabilité et rejouabilité.
+                    </p>
+                    <p class="mb-0">
+                      Dégamifier cette même règle peut réduire l'anxiété et soutenir l'apprentissage différencié.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-xl-7">
+              <article class="surface-card table-shell h-100">
+                <div class="card-body">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                    <div>
+                      <p class="card-kicker mb-1">De la mécanique ludique à l'application pédagogique</p>
+                      <h3 class="card-title mb-0">Équivalences utiles pour concevoir</h3>
+                    </div>
+                    <a class="btn btn-sm btn-outline-shell" href="docs/tableau-ludique-pedagogique.docx">Ouvrir le tableau complet</a>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                      <thead>
+                        <tr>
+                          <th>Élément ludique</th>
+                          <th>Équivalent pédagogique</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Histoire</td>
+                          <td>Scénario d'apprentissage dans lequel chaque section introduit une connaissance clé.</td>
+                        </tr>
+                        <tr>
+                          <td>Choix du lecteur</td>
+                          <td>Chemins différenciés adaptés aux réponses, besoins ou stratégies des apprenant·es.</td>
+                        </tr>
+                        <tr>
+                          <td>Des</td>
+                          <td>QCM, activités interactives et scores qui orientent vers remédiation ou progression.</td>
+                        </tr>
+                        <tr>
+                          <td>Feuille d'aventure</td>
+                          <td>Portfolio numérique de progression, badges, ressources collectées et traces d'apprentissage.</td>
+                        </tr>
+                        <tr>
+                          <td>Cartes et plans</td>
+                          <td>Itinéraires visuels, schémas de parcours et cartes mentales des embranchements.</td>
+                        </tr>
+                        <tr>
+                          <td>Codes secrets et énigmes</td>
+                          <td>Résolution de problèmes, casse-têtes et application contextualisée des savoirs.</td>
+                        </tr>
+                        <tr>
+                          <td>Quêtes secondaires</td>
+                          <td>Activités optionnelles pour approfondir ou élargir les apprentissages.</td>
+                        </tr>
+                        <tr>
+                          <td>Interactions avec PNJ</td>
+                          <td>Mentors, experts ou pairs simulant conseil, retour et nouvelles perspectives.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ingenierie" class="section-shell">
+        <div class="container">
+          <div class="row g-5 align-items-start mb-5">
+            <div class="col-lg-6">
+              <span class="eyebrow">Kit pédagogique</span>
+              <h2 class="section-title">Un kit pédagogique complet pour concevoir et faire jouer</h2>
+              <p class="section-copy">
+                Un kit pédagogique complet est disponible pour accompagner la découverte, l’animation et la
+                conception : modèle ADDIE, règles d'écriture, règles du jeu, gabarits de scènes, checklist qualité,
+                macro-scénario et exemple de transposition disciplinaire.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <article class="surface-card highlight-card">
+                <div class="card-body">
+                  <p class="card-kicker">Note d’intention</p>
+                  <h3 class="card-title">Un support de sensibilisation assumé</h3>
+                  <p>
+                    Le dispositif privilégie l’immersion narrative pour introduire des notions, susciter les échanges
+                    et ouvrir la réflexion. Il ne cherche pas à reproduire un dispositif complet, mais à rendre
+                    accessibles les principes pédagogiques et les logiques de conception du livre-jeu.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-7">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Modèle ADDIE</p>
+                  <h3 class="card-title">Cinq étapes pour passer de l'intention au dispositif</h3>
+                  <div class="timeline-grid">
+                    <div class="timeline-step" data-step="01">
+                      <h4 class="mini-title">Analyse</h4>
+                      <p>Identifier besoins, contexte, public cible, ressources, contraintes et objectifs du parcours.</p>
+                    </div>
+                    <div class="timeline-step" data-step="02">
+                      <h4 class="mini-title">Design</h4>
+                      <p>Spécifier les acquis, la stratégie, les contenus, les embranchements et les prototypes.</p>
+                    </div>
+                    <div class="timeline-step" data-step="03">
+                      <h4 class="mini-title">Développement</h4>
+                      <p>Produire textes, visuels, supports et médiatisation sur plateforme ou support papier.</p>
+                    </div>
+                    <div class="timeline-step" data-step="04">
+                      <h4 class="mini-title">Implémentation</h4>
+                      <p>Mettre à disposition, préparer l'animation, vérifier l'expérience de jeu et l'accompagnement.</p>
+                    </div>
+                    <div class="timeline-step" data-step="05">
+                      <h4 class="mini-title">Evaluation</h4>
+                      <p>Recueillir retours, mesurer l'engagement et ajuster le dispositif pour l'améliorer.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-5">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Demi-journée pédagogique</p>
+                  <h3 class="card-title">Un déroulé d'animation déjà pensé</h3>
+                  <div class="schedule-list">
+                    <div class="schedule-item">
+                      <span>15 min</span>
+                      <div>
+                        <strong>Accueil café</strong>
+                        <p>Installer une atmosphère conviviale et un premier temps de rencontre.</p>
+                      </div>
+                    </div>
+                    <div class="schedule-item">
+                      <span>15 min</span>
+                      <div>
+                        <strong>Activité immersive</strong>
+                        <p>Faire vivre L'odyssée de l'enseignement comme entrée en matière sensible.</p>
+                      </div>
+                    </div>
+                    <div class="schedule-item">
+                      <span>15 min</span>
+                      <div>
+                        <strong>Temps d'échange</strong>
+                        <p>Mettre en mots ressentis, usages et premières pistes de transfert.</p>
+                      </div>
+                    </div>
+                    <div class="schedule-item">
+                      <span>15 min</span>
+                      <div>
+                        <strong>Apports théoriques</strong>
+                        <p>Présenter les grands principes d'un livre-jeu pédagogique et leur valeur formative.</p>
+                      </div>
+                    </div>
+                    <div class="schedule-item">
+                      <span>2 h</span>
+                      <div>
+                        <strong>Conception accompagnée</strong>
+                        <p>Concevoir une histoire interactive en s'appuyant sur les gabarits fournis.</p>
+                      </div>
+                    </div>
+                    <div class="schedule-item">
+                      <span>45 min</span>
+                      <div>
+                        <strong>Lecture et jeu</strong>
+                        <p>Tester les productions, observer les choix et préparer les ajustements.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Du design pédagogique aux règles d'écriture</p>
+                  <h3 class="card-title">Un cycle narratif en quatre temps</h3>
+                  <ul class="clean-list">
+                    <li><strong>Stimulus :</strong> un élément perturbateur met en mouvement l'action.</li>
+                    <li><strong>Réponse :</strong> le joueur formule un choix ou une action.</li>
+                    <li><strong>Feedback :</strong> le narrateur donne une conséquence immédiate et intelligible.</li>
+                    <li><strong>Renforcement :</strong> le parcours se poursuit, s'améliore ou se dégrade.</li>
+                    <li><strong>Immersion :</strong> adresse directe, empathie, monde facilement projetable.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Du design pédagogique aux règles du jeu</p>
+                  <h3 class="card-title">Un cadre simple, clair et rejouable</h3>
+                  <ul class="clean-list">
+                    <li><strong>But principal :</strong> atteindre la meilleure fin possible.</li>
+                    <li><strong>But secondaire :</strong> explorer les chemins et comprendre les alternatives.</li>
+                    <li><strong>Questions :</strong> répétition et essai-erreur sans pénalité définitive.</li>
+                    <li><strong>Chances :</strong> quitter, reprendre et recommencer à tout moment.</li>
+                    <li><strong>Interaction :</strong> le joueur clique, choisit, compare et construit sa stratégie.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Template 01</p>
+                  <h3 class="card-title">Macro-scénario</h3>
+                  <p>
+                    Une structure simple pour poser scène de lancement, fiche personnage, situation initiale, élément
+                    perturbateur, développement, résolution et dénouement.
+                  </p>
+                  <a class="btn btn-outline-shell btn-sm" href="docs/macro-scenario.docx">Ouvrir le macro-scénario</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Template 02</p>
+                  <h3 class="card-title">Fiches de scène</h3>
+                  <p>
+                    Un canevas très opérationnel pour expliciter thème, contenu d'apprentissage, choix, feedback et
+                    transition scène par scène.
+                  </p>
+                  <a class="btn btn-outline-shell btn-sm" href="docs/fiche-conception.docx">Ouvrir les fiches</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Template 03</p>
+                  <h3 class="card-title">Checklist qualité</h3>
+                  <p>
+                    Structure narrative, objectifs, clarté des consignes, intégration des mécaniques et espaces de
+                    réflexion sont déjà posés comme critères d'évaluation.
+                  </p>
+                  <a class="btn btn-outline-shell btn-sm" href="docs/checklist-ldvelh.docx">Ouvrir la checklist</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ressources" class="section-shell section-soft">
+        <div class="container">
+          <div class="row g-5 align-items-start mb-5">
+            <div class="col-lg-6">
+              <span class="eyebrow">Ressources et supports</span>
+              <h2 class="section-title">La documentation pédagogique, rendue consultable et activable</h2>
+              <p class="section-copy">
+                Le site valorise l'intégralité des ressources : document socle sur l'immersion narrative, documents
+                méthodologiques, gabarits de conception, livre-jeu en EPUB, PDF de lecture et cartes heuristiques.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="download-strip justify-content-lg-end">
+                <a class="btn btn-outline-shell" href="docs/immersion-narrative-complete.docx">Document complet</a>
+                <a class="btn btn-outline-shell" href="docs/odyssee-enseignement.epub">EPUB</a>
+                <a class="btn btn-outline-shell" href="docs/odyssee-enseignement.pdf">PDF</a>
+                <a class="btn btn-outline-shell" href="docs/odyssee-enseignement.pages">Pages</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <figure class="surface-card figure-card mb-0">
+                <a
+                  class="figure-download-link"
+                  href="assets/media/odyssee-map.jpg"
+                  download="carte-heuristique-odyssee.jpg"
+                  aria-label="Télécharger la carte heuristique de l'odyssée"
+                >
+                  <img
+                    src="assets/media/odyssee-map.jpg"
+                    alt="Carte heuristique de l'odyssée"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <figcaption>
+                  Vue macro du système de chapitres et des relations entre scènes du livre-jeu.
+                  <a href="assets/media/odyssee-map.jpg" download="carte-heuristique-odyssee.jpg">Télécharger la carte heuristique</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <article class="surface-card example-sheet h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Exemple de transposition</p>
+                  <h3 class="card-title">Un exemple de transfert : Alex en territoire anglophone</h3>
+                  <p>
+                    Le gabarit présenté ici montre comment la même logique peut servir un autre domaine :
+                    s'orienter dans l'espace public, demander son chemin, lire des panneaux, formuler une demande
+                    polie et tester la compréhension dans une aventure courte.
+                  </p>
+                  <ul class="clean-list">
+                    <li>Situation : arrivée à la gare, désorientation, absence d'Internet.</li>
+                    <li>Choix : demander son chemin ou tenter l'exploration seul.</li>
+                    <li>Feedback : usage du vocabulaire, lecture de panneaux, clarification.</li>
+                  </ul>
+                  <a class="btn btn-outline-shell btn-sm" href="docs/cheat-sheet.docx">Ouvrir le cheat sheet</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <article class="surface-card resource-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Bloc documentaire 01</p>
+                  <h3 class="card-title">Fondements</h3>
+                  <p>Définitions, théories d'apprentissage, objectifs ludiques et pédagogiques, principes du jeu pédagogique.</p>
+                  <div class="resource-links">
+                    <a href="docs/immersion-narrative-complete.docx">Immersion narrative - document complet</a>
+                    <a href="docs/theories-apprentissage.docx">Théories d'apprentissage</a>
+                    <a href="docs/objectifs-ludiques-pedagogiques.docx">Objectifs ludiques et pédagogiques</a>
+                    <a href="docs/atelier-demi-journee.docx">Demi-journée pédagogique</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card resource-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Bloc documentaire 02</p>
+                  <h3 class="card-title">Concevoir</h3>
+                  <p>Tableau d'équivalences, macro-scénario, fiches de scène, checklist et cartes heuristiques.</p>
+                  <div class="resource-links">
+                    <a href="docs/tableau-ludique-pedagogique.docx">Tableau ludique-pédagogique</a>
+                    <a href="docs/macro-scenario.docx">Macro-scénario</a>
+                    <a href="docs/fiche-conception.docx">Fiche de conception</a>
+                    <a href="docs/checklist-ldvelh.docx">Checklist du livre-jeu</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="surface-card resource-card h-100">
+                <div class="card-body">
+                  <p class="card-kicker">Bloc documentaire 03</p>
+                  <h3 class="card-title">Jouer et diffuser</h3>
+                  <p>Le livre-jeu original, le PDF de lecture, le format Pages et les supports visuels exploités dans le site.</p>
+                  <div class="resource-links">
+                    <a href="docs/odyssee-enseignement.epub">Livre-jeu EPUB</a>
+                    <a href="docs/odyssee-enseignement.pdf">Version PDF</a>
+                    <a href="docs/odyssee-enseignement.pages">Version Pages</a>
+                    <a href="assets/media/mini-aventure-map.jpg">Carte mentale complémentaire</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jouer" class="section-shell">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="eyebrow">Accès au jeu</span>
+              <h2 class="section-title">Une entrée de jeu dédiée, plus immersive et sans spoilers</h2>
+              <p class="section-copy">
+                Le site principal reste centré sur la compréhension pédagogique du dispositif. L'expérience de jeu
+                dispose de sa propre interface, pensée comme un journal d'aventure : lecture des chapitres, décisions
+                prises, progression, route active et artefacts débloqués.
+              </p>
+              <p class="section-copy">
+                La carte complète n'y est plus visible d'emblée : on entre dans le récit par la narration, puis on
+                découvre le système au rythme des choix.
+              </p>
+              <p class="section-copy">
+                Le bouton <strong>Jouer</strong> du bandeau ouvre directement cette expérience de lecture.
+              </p>
+              <div class="download-strip">
+                <a class="btn btn-outline-shell btn-lg" href="docs/odyssee-enseignement.epub">Télécharger l'EPUB</a>
+                <a class="btn btn-outline-shell btn-lg" href="docs/odyssee-enseignement.pdf">Télécharger le PDF</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <article class="surface-card play-entry-card h-100">
+                    <div class="card-body">
+                      <p class="card-kicker">Mode lecture</p>
+                      <h3 class="card-title">Interface recentrée</h3>
+                      <p>
+                        Un écran dédié au jeu, sans carte globale visible, pour préserver l'effet d'exploration.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-sm-6">
+                  <article class="surface-card play-entry-card h-100">
+                    <div class="card-body">
+                      <p class="card-kicker">Journal d'aventure</p>
+                      <h3 class="card-title">Suivi de la partie</h3>
+                      <p>
+                        Progression, décisions prises, route active et collection d'artefacts pédagogiques débloqués.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12">
+                  <figure class="surface-card figure-card mb-0">
+                    <img
+                      src="assets/media/un-livre-different-web.jpg"
+                      alt="Entrée dans le livre-jeu"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption>
+                      Le site pédagogique présente le cadre. La page jeu fait vivre l'odyssée comme un parcours à
+                      choix, dans un espace de lecture dédié.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="credits" class="site-footer">
+      <div class="container d-grid gap-3">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
+          <p class="mb-0">
+            Design :
+            <a href="https://cliiip-openlab.github.io/cliiip/" target="_blank" rel="noopener noreferrer">CLI Ingénierie et Innovation Pédagogique</a>
+          </p>
+          <p class="mb-0">Version <span id="currentVersion"></span></p>
+        </div>
+        <div class="footer-credits">
+          <p class="mb-2">
+            <strong>Crédits et inspiration :</strong> ce site est librement et fortement inspiré du livre dont vous
+            êtes le héros
+            <a href="https://www.fightingfantasy.com/the-warlock-of-firetop-mountain" target="_blank" rel="noopener noreferrer">Le Sorcier de la Montagne de Feu</a>
+            (<em>The Warlock of Firetop Mountain</em>), œuvre fondatrice de la série <em>Fighting Fantasy</em>, créée
+            par Steve Jackson et Ian Livingstone en 1982.
+          </p>
+          <p class="mb-0">
+            Cet ouvrage a contribué à populariser le principe du récit à embranchements, dans lequel la lecture, le
+            hasard et la prise de décision construisent ensemble l’aventure. La présente ressource en propose une
+            réinterprétation pédagogique ; les œuvres, titres et références associés demeurent la propriété de leurs
+            ayants droit respectifs.
+          </p>
+        </div>
+        <div class="footer-legal">
+          <p class="mb-2">
+            <strong>Licence ouverte :</strong> l’ensemble des contenus originaux du site est mis à disposition sous
+            licence
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons CC BY-SA 4.0</a>.
+          </p>
+          <p class="mb-0">
+            Conformément aux Ressources Éducatives Libres (REL / OER) telles que définies par l’UNESCO, cette
+            ressource est pensée pour être accessible, utilisée, adaptée et redistribuée par la communauté éducative.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/version.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
