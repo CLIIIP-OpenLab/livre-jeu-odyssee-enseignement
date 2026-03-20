@@ -42,7 +42,7 @@ Les éléments de type **Bootstrap**, **Font Awesome**, polices tierces ou autre
 
 Attribution suggérée :
 
-**CLI Ingénierie et Innovation Pédagogique - OpenLab, "L'Odyssée de l'enseignement", licence CC BY-SA 4.0**
+**JEDI-OpenLab, "L'Odyssée de l'enseignement", licence CC BY-SA 4.0**
 
 ## Ressource juridique
 
